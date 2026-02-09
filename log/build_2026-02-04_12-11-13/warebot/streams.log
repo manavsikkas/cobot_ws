@@ -1,0 +1,28 @@
+[0.561s] Invoking command in '/home/kaneki/warebot_ws/src/warebot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kaneki/warebot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/warebot_ws/build/warebot/build install --record /home/kaneki/warebot_ws/build/warebot/install.log --single-version-externally-managed install_data
+[0.748s] running egg_info
+[0.760s] writing ../../build/warebot/warebot.egg-info/PKG-INFO
+[0.761s] writing dependency_links to ../../build/warebot/warebot.egg-info/dependency_links.txt
+[0.761s] writing requirements to ../../build/warebot/warebot.egg-info/requires.txt
+[0.761s] writing top-level names to ../../build/warebot/warebot.egg-info/top_level.txt
+[0.786s] reading manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[0.786s] writing manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[0.787s] running build
+[0.787s] running build_py
+[0.787s] running install
+[0.791s] running install_lib
+[0.804s] running install_data
+[0.804s] copying package.xml -> /home/kaneki/warebot_ws/install/warebot/share/warebot
+[0.804s] copying launch/display.launch.py -> /home/kaneki/warebot_ws/install/warebot/share/warebot/launch
+[0.805s] copying description/ros2_control.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description
+[0.805s] copying description/robot.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description
+[0.805s] copying description/a200/drivetrain/wheels/indoor.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+[0.805s] copying description/a200/drivetrain/wheels/outdoor.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+[0.805s] creating /home/kaneki/warebot_ws/install/warebot/share/warebot/world
+[0.805s] copying world/empty.world -> /home/kaneki/warebot_ws/install/warebot/share/warebot/world
+[0.806s] copying config/ros2_control.yaml -> /home/kaneki/warebot_ws/install/warebot/share/warebot/config
+[0.806s] running install_egg_info
+[0.821s] removing '/home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info' (and everything under it)
+[0.821s] Copying ../../build/warebot/warebot.egg-info to /home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info
+[0.821s] running install_scripts
+[0.914s] writing list of installed files to '/home/kaneki/warebot_ws/build/warebot/install.log'
+[0.931s] Invoked command in '/home/kaneki/warebot_ws/src/warebot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kaneki/warebot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/warebot_ws/build/warebot/build install --record /home/kaneki/warebot_ws/build/warebot/install.log --single-version-externally-managed install_data

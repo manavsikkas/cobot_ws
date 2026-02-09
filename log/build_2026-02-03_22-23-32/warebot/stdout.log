@@ -1,0 +1,38 @@
+running egg_info
+writing ../../build/warebot/warebot.egg-info/PKG-INFO
+writing dependency_links to ../../build/warebot/warebot.egg-info/dependency_links.txt
+writing requirements to ../../build/warebot/warebot.egg-info/requires.txt
+writing top-level names to ../../build/warebot/warebot.egg-info/top_level.txt
+reading manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+writing manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying meshes/a200/base_link.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200
+copying meshes/a200/top_chassis.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/user_rail.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/bumper3.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/large_top_plate.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/top_plate.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/bumper.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/bumper_extension.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/bumper2.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/300_mm_sensor_arch.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/510_mm_sensor_arch.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/top_plate.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/510_mm_sensor_arch.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/300_mm_sensor_arch.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/observer_backpack_masts.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/large_top_plate_collision.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/user_rail.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/observer_backpack_shell.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+copying meshes/a200/attachments/pacs_top_plate.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/attachments
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200/drivetrain
+running install_egg_info
+removing '/home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/warebot/warebot.egg-info to /home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/kaneki/warebot_ws/build/warebot/install.log'

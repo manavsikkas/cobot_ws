@@ -1,0 +1,9 @@
+source;share/warebot/hook/pythonpath.ps1
+source;share/warebot/hook/pythonpath.dsv
+source;share/warebot/hook/pythonpath.sh
+source;share/warebot/hook/ament_prefix_path.ps1
+source;share/warebot/hook/ament_prefix_path.dsv
+source;share/warebot/hook/ament_prefix_path.sh
+source;../../build/warebot/share/warebot/hook/pythonpath_develop.ps1
+source;../../build/warebot/share/warebot/hook/pythonpath_develop.dsv
+source;../../build/warebot/share/warebot/hook/pythonpath_develop.sh

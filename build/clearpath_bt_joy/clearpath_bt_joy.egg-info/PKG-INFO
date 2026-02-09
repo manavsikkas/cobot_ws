@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: clearpath-bt-joy
+Version: 2.8.5
+Summary: Clearpath joy controller link quality monitor
+Author: Chris Iverach-Brereton
+Author-email: civerachb@clearpathrobotics.com
+Maintainer: Chris Iverach-Brereton
+Maintainer-email: civerachb@clearpathrobotics.com
+License: BSD-3
+License-File: LICENSE

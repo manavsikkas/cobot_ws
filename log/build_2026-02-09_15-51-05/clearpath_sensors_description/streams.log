@@ -1,0 +1,96 @@
+[0.292s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_sensors_description -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_sensors_description
+[0.608s] -- The C compiler identification is GNU 13.3.0
+[0.610s] -- The CXX compiler identification is GNU 13.3.0
+[0.610s] -- Detecting C compiler ABI info
+[0.666s] -- Detecting C compiler ABI info - done
+[0.676s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.677s] -- Detecting C compile features
+[0.677s] -- Detecting C compile features - done
+[0.692s] -- Detecting CXX compiler ABI info
+[0.837s] -- Detecting CXX compiler ABI info - done
+[0.848s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.849s] -- Detecting CXX compile features
+[0.849s] -- Detecting CXX compile features - done
+[0.860s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.136s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.473s] -- Configuring done (1.2s)
+[1.475s] -- Generating done (0.0s)
+[1.477s] -- Build files have been written to: /home/kaneki/cobot_ws/build/clearpath_sensors_description
+[1.482s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_sensors_description -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_sensors_description
+[1.484s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_sensors_description -- -j16 -l16
+[1.567s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_sensors_description -- -j16 -l16
+[1.569s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_sensors_description
+[1.582s] -- Install configuration: ""
+[1.582s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes
+[1.582s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/axis_q62_top.stl
+[1.582s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/seyond_robin_w.stl
+[1.588s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/hokuyo_utm30.stl
+[1.589s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/fixposition.stl
+[1.589s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/oakd_pro_w_poe.dae
+[1.599s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/gnss_helical.stl
+[1.599s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/oakd_lite.dae
+[1.604s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/sick_lms1xx_collision.stl
+[1.604s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/axis_q62_base.stl
+[1.604s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/hokuyo_ust.stl
+[1.604s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/gnss_spherical.stl
+[1.605s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/gnss_patch.stl
+[1.605s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/oakd_pro.dae
+[1.613s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/flir_blackfly.stl
+[1.613s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/novatel_smart6.stl
+[1.614s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/ouster
+[1.614s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/ouster/os1_fins.dae
+[1.614s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/ouster/os1_halo.dae
+[1.616s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/ouster/os1_base.dae
+[1.617s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/ouster/os1_lidar.dae
+[1.620s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/sick_lms1xx_small.dae
+[1.621s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/axis_dome.stl
+[1.621s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/meshes/novatel_smart7.stl
+[1.622s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf
+[1.622s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/sick_lms1xx.urdf.xacro
+[1.622s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/intel_realsense.urdf.xacro
+[1.622s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/redshift_um7.urdf.xacro
+[1.623s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/phidgets_spatial.urdf.xacro
+[1.623s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/microstrain_gq7.urdf.xacro
+[1.623s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/luxonis_oakd.urdf.xacro
+[1.623s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/chrobotics_um6.urdf.xacro
+[1.624s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/gnss_antenna.urdf.xacro
+[1.624s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/swiftnav_duro.urdf.xacro
+[1.624s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/garmin_18x.urdf.xacro
+[1.624s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/microstrain_imu.urdf.xacro
+[1.625s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/velodyne_lidar.urdf.xacro
+[1.625s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/wiferion.urdf.xacro
+[1.625s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/ouster_os1.urdf.xacro
+[1.625s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/flir_blackfly.urdf.xacro
+[1.626s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/intel
+[1.626s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/intel/d456.urdf.xacro
+[1.626s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/intel/d455.urdf.xacro
+[1.627s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/intel/d435i.urdf.xacro
+[1.627s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/intel/d435.urdf.xacro
+[1.627s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/intel/d415.urdf.xacro
+[1.627s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/axis
+[1.627s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/axis/axis_q62.urdf.xacro
+[1.627s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/axis/axis_dome_ptz.urdf.xacro
+[1.628s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/axis/axis_dome_fixed.urdf.xacro
+[1.628s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/axis_camera.urdf.xacro
+[1.628s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/novatel_smart7.urdf.xacro
+[1.628s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/hokuyo_ust.urdf.xacro
+[1.629s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/fixposition.urdf.xacro
+[1.629s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/novatel_smart6.urdf.xacro
+[1.629s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/seyond_lidar.urdf.xacro
+[1.629s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/urdf/stereolabs_zed.urdf.xacro
+[1.630s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/ament_index/resource_index/package_run_dependencies/clearpath_sensors_description
+[1.630s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/ament_index/resource_index/parent_prefix_path/clearpath_sensors_description
+[1.630s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/environment/ament_prefix_path.sh
+[1.630s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/environment/ament_prefix_path.dsv
+[1.630s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/environment/path.sh
+[1.631s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/environment/path.dsv
+[1.631s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/local_setup.bash
+[1.631s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/local_setup.sh
+[1.632s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/local_setup.zsh
+[1.633s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/local_setup.dsv
+[1.633s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.dsv
+[1.633s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/ament_index/resource_index/packages/clearpath_sensors_description
+[1.633s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/cmake/clearpath_sensors_descriptionConfig.cmake
+[1.633s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/cmake/clearpath_sensors_descriptionConfig-version.cmake
+[1.633s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.xml
+[1.678s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_sensors_description

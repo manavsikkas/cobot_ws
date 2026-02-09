@@ -1,0 +1,2 @@
+[console_scripts]
+clearpath_bt_joy_cutoff_node = clearpath_bt_joy.clearpath_bt_joy_cutoff_node:main

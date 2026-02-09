@@ -1,0 +1,65 @@
+[0.556s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_customization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_customization -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_customization
+[0.633s] -- The C compiler identification is GNU 13.3.0
+[0.698s] -- The CXX compiler identification is GNU 13.3.0
+[0.726s] -- Detecting C compiler ABI info
+[0.878s] -- Detecting C compiler ABI info - done
+[0.889s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.890s] -- Detecting C compile features
+[0.890s] -- Detecting C compile features - done
+[0.911s] -- Detecting CXX compiler ABI info
+[1.078s] -- Detecting CXX compiler ABI info - done
+[1.087s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.088s] -- Detecting CXX compile features
+[1.088s] -- Detecting CXX compile features - done
+[1.098s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.367s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.641s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.801s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.801s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.801s] -- Added test 'lint_cmake' to check CMake code style
+[1.803s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.807s] -- Added test 'xmllint' to check XML markup files
+[1.812s] -- Configuring done (1.2s)
+[1.816s] -- Generating done (0.0s)
+[1.817s] -- Build files have been written to: /home/kaneki/cobot_ws/build/clearpath_customization
+[1.823s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_customization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_customization -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_customization
+[1.825s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_customization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_customization -- -j16 -l16
+[1.898s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_customization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_customization -- -j16 -l16
+[1.900s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_customization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_customization
+[1.914s] -- Install configuration: ""
+[1.915s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/lib/clearpath_customization/generate_bringup
+[1.915s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/lib/clearpath_customization/generate_description
+[1.915s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup
+[1.915s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/package.xml
+[1.915s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/launch
+[1.916s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/launch/device.launch.py
+[1.916s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/launch/project_bringup.launch.py
+[1.916s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/config
+[1.916s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/config/device.yaml
+[1.916s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/LICENSE
+[1.917s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_bringup/CMakeLists.txt
+[1.917s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description
+[1.917s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/meshes
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/meshes/donut.stl
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/package.xml
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/LICENSE
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/urdf
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/urdf/donut.urdf.xacro
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/urdf/project_description.urdf.xacro
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/project_description/CMakeLists.txt
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/ament_index/resource_index/package_run_dependencies/clearpath_customization
+[1.918s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/ament_index/resource_index/parent_prefix_path/clearpath_customization
+[1.919s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/environment/ament_prefix_path.sh
+[1.919s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/environment/ament_prefix_path.dsv
+[1.919s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/environment/path.sh
+[1.919s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/environment/path.dsv
+[1.919s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/local_setup.bash
+[1.920s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/local_setup.sh
+[1.920s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/local_setup.zsh
+[1.920s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/local_setup.dsv
+[1.920s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/package.dsv
+[1.921s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/ament_index/resource_index/packages/clearpath_customization
+[1.921s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/cmake/clearpath_customizationConfig.cmake
+[1.921s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/cmake/clearpath_customizationConfig-version.cmake
+[1.921s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_customization/share/clearpath_customization/package.xml
+[1.923s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_customization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_customization

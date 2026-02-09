@@ -1,0 +1,58 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kaneki/cobot_ws/build/clearpath_mounts_description
+-- Install configuration: ""
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/sick_upright.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/sick_inverted.dae
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/fath_pivot_mount_base.dae
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/disk.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/fath_pivot_mount.dae
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_40.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_vertical.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_20.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_horizontal_large.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_80.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_horizontal.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_60.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/riser_1x7.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/riser_8x7.stl
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/disk.urdf.xacro
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/sick.urdf.xacro
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/fath_pivot.urdf.xacro
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/post.urdf.xacro
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs/riser_leg.urdf.xacro
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs/bracket.urdf.xacro
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs/riser.urdf.xacro
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/ament_index/resource_index/package_run_dependencies/clearpath_mounts_description
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/ament_index/resource_index/parent_prefix_path/clearpath_mounts_description
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/ament_prefix_path.sh
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/ament_prefix_path.dsv
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/path.sh
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/path.dsv
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.bash
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.sh
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.zsh
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.dsv
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/package.dsv
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/ament_index/resource_index/packages/clearpath_mounts_description
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/cmake/clearpath_mounts_descriptionConfig.cmake
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/cmake/clearpath_mounts_descriptionConfig-version.cmake
+-- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/package.xml

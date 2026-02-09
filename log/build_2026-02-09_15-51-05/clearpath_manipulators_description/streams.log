@@ -1,0 +1,142 @@
+[0.128s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_manipulators_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_manipulators_description -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_manipulators_description
+[0.652s] -- The C compiler identification is GNU 13.3.0
+[0.652s] -- The CXX compiler identification is GNU 13.3.0
+[0.652s] -- Detecting C compiler ABI info
+[0.652s] -- Detecting C compiler ABI info - done
+[0.652s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.652s] -- Detecting C compile features
+[0.652s] -- Detecting C compile features - done
+[0.653s] -- Detecting CXX compiler ABI info
+[0.653s] -- Detecting CXX compiler ABI info - done
+[0.663s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.663s] -- Detecting CXX compile features
+[0.663s] -- Detecting CXX compile features - done
+[0.674s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.938s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.285s] -- Configuring done (1.1s)
+[1.287s] -- Generating done (0.0s)
+[1.289s] -- Build files have been written to: /home/kaneki/cobot_ws/build/clearpath_manipulators_description
+[1.296s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_manipulators_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_manipulators_description -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_manipulators_description
+[1.298s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_manipulators_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_manipulators_description -- -j16 -l16
+[1.387s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_manipulators_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_manipulators_description -- -j16 -l16
+[1.409s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_manipulators_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_manipulators_description
+[1.424s] -- Install configuration: ""
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/arm
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/arm/kinova_gen3_7dof.urdf.xacro
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/arm/universal_robots.urdf.xacro
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/arm/franka.urdf.xacro
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/arm/kinova_gen3_lite.urdf.xacro
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/arm/kinova_gen3_6dof.urdf.xacro
+[1.424s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/gripper
+[1.425s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/gripper/kinova_2f_lite.urdf.xacro
+[1.425s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/gripper/franka_gripper.urdf.xacro
+[1.425s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/gripper/robotiq_2f_140.urdf.xacro
+[1.425s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/gripper/robotiq_2f_85.urdf.xacro
+[1.425s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/lift
+[1.425s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/urdf/lift/ewellix.urdf.xacro
+[1.425s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config
+[1.426s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm
+[1.426s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_lite
+[1.426s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_lite/moveit_controllers.yaml
+[1.426s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_lite/initial_positions.yaml
+[1.427s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_lite/joint_limits.yaml
+[1.427s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_lite/control.yaml
+[1.427s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/franka
+[1.427s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/franka/moveit_controllers.yaml
+[1.427s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/franka/initial_positions.yaml
+[1.427s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/franka/joint_limits.yaml
+[1.428s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/franka/control.yaml
+[1.428s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_7dof
+[1.428s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_7dof/moveit_controllers.yaml
+[1.428s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_7dof/initial_positions.yaml
+[1.429s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_7dof/joint_limits.yaml
+[1.429s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_7dof/control.yaml
+[1.429s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_6dof
+[1.430s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_6dof/moveit_controllers.yaml
+[1.430s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_6dof/initial_positions.yaml
+[1.430s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_6dof/joint_limits.yaml
+[1.430s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/kinova_gen3_6dof/control.yaml
+[1.431s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/universal_robots
+[1.431s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/universal_robots/moveit_controllers.yaml
+[1.431s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/universal_robots/initial_positions.yaml
+[1.431s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/universal_robots/joint_limits.yaml
+[1.432s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/arm/universal_robots/control.yaml
+[1.432s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper
+[1.432s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_140
+[1.432s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_140/moveit_controllers.yaml
+[1.432s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_140/initial_positions.yaml
+[1.432s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_140/joint_limits.yaml
+[1.432s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_140/control.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/kinova_2f_lite
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/kinova_2f_lite/moveit_controllers.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/kinova_2f_lite/initial_positions.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/kinova_2f_lite/joint_limits.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/kinova_2f_lite/control.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/franka_gripper
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/franka_gripper/moveit_controllers.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/franka_gripper/initial_positions.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/franka_gripper/joint_limits.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/franka_gripper/control.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/franka_gripper/gazebo_control.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_85
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_85/moveit_controllers.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_85/initial_positions.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_85/joint_limits.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/gripper/robotiq_2f_85/control.yaml
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix
+[1.433s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/moveit_controllers_jtc.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/control_jpc.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/moveit_controllers.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/initial_positions.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/control_jtc.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/joint_limits.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/control.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/config/lift/ewellix/moveit_controllers_jpc.yaml
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/arm
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/arm/franka.srdf.xacro
+[1.434s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/arm/kinova_gen3_7dof.srdf.xacro
+[1.435s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/arm/kinova_gen3_lite.srdf.xacro
+[1.435s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/arm/kinova_gen3_6dof.srdf.xacro
+[1.435s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/arm/universal_robots.srdf.xacro
+[1.435s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/gripper
+[1.435s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/gripper/franka_gripper.srdf.xacro
+[1.435s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/gripper/kinova_2f_lite.srdf.xacro
+[1.436s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/gripper/robotiq_2f_85.srdf.xacro
+[1.436s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/gripper/robotiq_2f_140.srdf.xacro
+[1.436s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/lift
+[1.436s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/srdf/lift/ewellix.srdf.xacro
+[1.436s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/launch
+[1.437s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/launch/description.launch.py
+[1.437s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes
+[1.437s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper
+[1.437s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_outer_finger_collision.stl
+[1.438s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_inner_finger.stl
+[1.438s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_coupling.stl
+[1.438s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_outer_finger.stl
+[1.438s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_inner_knuckle_collision.stl
+[1.438s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_coupling_collision.stl
+[1.438s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_outer_knuckle_collision.stl
+[1.439s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_outer_knuckle.stl
+[1.439s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_inner_finger_collision.stl
+[1.439s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_base_link_collision.stl
+[1.439s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_base_link.stl
+[1.439s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/meshes/gripper/robotiq_2f_140_inner_knuckle.stl
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/ament_index/resource_index/package_run_dependencies/clearpath_manipulators_description
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/ament_index/resource_index/parent_prefix_path/clearpath_manipulators_description
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/environment/ament_prefix_path.sh
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/environment/ament_prefix_path.dsv
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/environment/path.sh
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/environment/path.dsv
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/local_setup.bash
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/local_setup.sh
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/local_setup.zsh
+[1.440s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/local_setup.dsv
+[1.441s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/package.dsv
+[1.441s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/ament_index/resource_index/packages/clearpath_manipulators_description
+[1.441s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/cmake/clearpath_manipulators_descriptionConfig.cmake
+[1.442s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/cmake/clearpath_manipulators_descriptionConfig-version.cmake
+[1.442s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_manipulators_description/share/clearpath_manipulators_description/package.xml
+[1.442s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_manipulators_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_manipulators_description

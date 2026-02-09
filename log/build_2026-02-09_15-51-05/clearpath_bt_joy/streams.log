@@ -1,0 +1,38 @@
+[1.510s] Invoking command in '/home/kaneki/cobot_ws/src/clearpath_common/clearpath_bt_joy': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kaneki/cobot_ws/build/clearpath_bt_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/clearpath_bt_joy build --build-base /home/kaneki/cobot_ws/build/clearpath_bt_joy/build install --record /home/kaneki/cobot_ws/build/clearpath_bt_joy/install.log --single-version-externally-managed install_data
+[1.794s] running egg_info
+[1.794s] creating ../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info
+[1.816s] writing ../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/PKG-INFO
+[1.816s] writing dependency_links to ../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/dependency_links.txt
+[1.816s] writing entry points to ../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/entry_points.txt
+[1.817s] writing requirements to ../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/requires.txt
+[1.818s] writing top-level names to ../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/top_level.txt
+[1.818s] writing manifest file '../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/SOURCES.txt'
+[1.850s] reading manifest file '../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/SOURCES.txt'
+[1.850s] adding license file 'LICENSE'
+[1.851s] writing manifest file '../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info/SOURCES.txt'
+[1.851s] running build
+[1.852s] running build_py
+[1.853s] creating /home/kaneki/cobot_ws/build/clearpath_bt_joy/build
+[1.853s] creating /home/kaneki/cobot_ws/build/clearpath_bt_joy/build/lib
+[1.853s] creating /home/kaneki/cobot_ws/build/clearpath_bt_joy/build/lib/clearpath_bt_joy
+[1.853s] copying clearpath_bt_joy/__init__.py -> /home/kaneki/cobot_ws/build/clearpath_bt_joy/build/lib/clearpath_bt_joy
+[1.853s] copying clearpath_bt_joy/clearpath_bt_joy_cutoff_node.py -> /home/kaneki/cobot_ws/build/clearpath_bt_joy/build/lib/clearpath_bt_joy
+[1.853s] running install
+[1.857s] running install_lib
+[1.875s] creating /home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages/clearpath_bt_joy
+[1.875s] copying /home/kaneki/cobot_ws/build/clearpath_bt_joy/build/lib/clearpath_bt_joy/__init__.py -> /home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages/clearpath_bt_joy
+[1.875s] copying /home/kaneki/cobot_ws/build/clearpath_bt_joy/build/lib/clearpath_bt_joy/clearpath_bt_joy_cutoff_node.py -> /home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages/clearpath_bt_joy
+[1.876s] byte-compiling /home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages/clearpath_bt_joy/__init__.py to __init__.cpython-312.pyc
+[1.876s] byte-compiling /home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages/clearpath_bt_joy/clearpath_bt_joy_cutoff_node.py to clearpath_bt_joy_cutoff_node.cpython-312.pyc
+[1.880s] running install_data
+[1.880s] creating /home/kaneki/cobot_ws/install/clearpath_bt_joy/share/ament_index
+[1.880s] creating /home/kaneki/cobot_ws/install/clearpath_bt_joy/share/ament_index/resource_index
+[1.880s] creating /home/kaneki/cobot_ws/install/clearpath_bt_joy/share/ament_index/resource_index/packages
+[1.880s] copying resource/clearpath_bt_joy -> /home/kaneki/cobot_ws/install/clearpath_bt_joy/share/ament_index/resource_index/packages
+[1.880s] copying package.xml -> /home/kaneki/cobot_ws/install/clearpath_bt_joy/share/clearpath_bt_joy
+[1.880s] running install_egg_info
+[1.897s] Copying ../../../build/clearpath_bt_joy/clearpath_bt_joy.egg-info to /home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages/clearpath_bt_joy-2.8.5-py3.12.egg-info
+[1.898s] running install_scripts
+[2.032s] Installing clearpath_bt_joy_cutoff_node script to /home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/clearpath_bt_joy
+[2.032s] writing list of installed files to '/home/kaneki/cobot_ws/build/clearpath_bt_joy/install.log'
+[2.058s] Invoked command in '/home/kaneki/cobot_ws/src/clearpath_common/clearpath_bt_joy' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kaneki/cobot_ws/build/clearpath_bt_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/clearpath_bt_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/clearpath_bt_joy build --build-base /home/kaneki/cobot_ws/build/clearpath_bt_joy/build install --record /home/kaneki/cobot_ws/build/clearpath_bt_joy/install.log --single-version-externally-managed install_data

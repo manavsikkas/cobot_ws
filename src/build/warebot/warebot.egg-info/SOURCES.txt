@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+resource/warebot
+warebot/__init__.py
+warebot.egg-info/PKG-INFO
+warebot.egg-info/SOURCES.txt
+warebot.egg-info/dependency_links.txt
+warebot.egg-info/requires.txt
+warebot.egg-info/top_level.txt
+warebot.egg-info/zip-safe

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="warebot">
+
+  <!-- ========================================= -->
+  <!-- WAREBOT - Main Robot Description          -->
+  <!-- ========================================= -->
+  
+  <!-- Arguments -->
+  <xacro:arg name="use_sim" default="true"/>
+  
+  <!-- Common -->
+  <xacro:include filename="$(find warebot)/description/common.urdf.xacro"/>
+
+  <!-- ========================================= -->
+  <!-- Platform: Husky A200                      -->
+  <!-- ========================================= -->
+  <xacro:include filename="$(find warebot)/description/a200/a200.urdf.xacro"/>
+  <xacro:a200 control="diff_4wd" front_wheels="outdoor" rear_wheels="outdoor"/>
+
+  <!-- Husky Attachments -->
+  <xacro:include filename="$(find warebot)/description/a200/attachments/bumper.urdf.xacro"/>
+  <xacro:bumper name="front_bumper" model="default" parent_link="front_bumper_mount" extension="0.0">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:bumper>
+
+  <xacro:include filename="$(find warebot)/description/a200/attachments/bumper.urdf.xacro"/>
+  <xacro:bumper name="rear_bumper" model="default" parent_link="rear_bumper_mount" extension="0.0">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:bumper>
+
+  <xacro:include filename="$(find warebot)/description/a200/attachments/top_plate.urdf.xacro"/>
+  <xacro:top_plate name="top_plate" model="default" parent_link="default_mount">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:top_plate>
+
+
+  <!-- ========================================= -->
+  <!-- ros2_control                              -->
+  <!-- ========================================= -->
+  <xacro:include filename="$(find warebot)/description/ros2_control.urdf.xacro"/>
+  <xacro:a200_ros2_control use_sim="$(arg use_sim)"/>
+
+
+  <!-- ========================================= -->
+  <!-- Manipulator: UR5 Robot Arm                -->
+  <!-- ========================================= -->
+  <!-- TODO: Add UR5 robot arm integration -->
+  <!-- Example:
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro"/>
+  <xacro:ur5_robot 
+    name="ur5" 
+    parent="top_plate_link"
+    prefix="">
+    <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+  </xacro:ur5_robot>
+  -->
+
+
+  <!-- ========================================= -->
+  <!-- Sensors                                   -->
+  <!-- ========================================= -->
+  <!-- TODO: Add sensors (LiDAR, cameras, etc.) -->
+  <!-- Example for LiDAR:
+  <xacro:include filename="$(find clearpath_sensors_description)/urdf/sick_lms1xx.urdf.xacro"/>
+  <xacro:sick_lms1xx 
+    name="front_laser" 
+    parent_link="front_mount"
+    prefix="">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:sick_lms1xx>
+  -->
+
+
+  <!-- ========================================= -->
+  <!-- Custom Links and Mounts                   -->
+  <!-- ========================================= -->
+
+
+</robot>

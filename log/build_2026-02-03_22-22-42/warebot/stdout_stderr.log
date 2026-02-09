@@ -1,0 +1,33 @@
+running egg_info
+writing ../../build/warebot/warebot.egg-info/PKG-INFO
+writing dependency_links to ../../build/warebot/warebot.egg-info/dependency_links.txt
+writing requirements to ../../build/warebot/warebot.egg-info/requires.txt
+writing top-level names to ../../build/warebot/warebot.egg-info/top_level.txt
+reading manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+writing manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/display.launch.py -> /home/kaneki/warebot_ws/install/warebot/share/warebot/launch
+copying description/gazebo.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description
+copying description/robot.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description
+copying description/common.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200
+copying description/a200/a200.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/attachments
+copying description/a200/attachments/sensor_arch.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/attachments
+copying description/a200/attachments/observer_backpack.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/attachments
+copying description/a200/attachments/top_plate.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/attachments
+copying description/a200/attachments/bumper.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/attachments
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/drivetrain
+copying description/a200/drivetrain/wheels.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/drivetrain
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+copying description/a200/drivetrain/wheels/indoor.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+copying description/a200/drivetrain/wheels/outdoor.urdf.xacro -> /home/kaneki/warebot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes
+creating /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200
+copying meshes/a200/base_link.stl -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200
+copying meshes/a200/top_chassis.dae -> /home/kaneki/warebot_ws/install/warebot/share/warebot/meshes/a200
+error: can't copy 'meshes/a200/attachments': doesn't exist or not a regular file

@@ -1,0 +1,64 @@
+[0.310s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_mounts_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_mounts_description -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_mounts_description
+[0.626s] -- The C compiler identification is GNU 13.3.0
+[0.626s] -- The CXX compiler identification is GNU 13.3.0
+[0.626s] -- Detecting C compiler ABI info
+[0.698s] -- Detecting C compiler ABI info - done
+[0.707s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.707s] -- Detecting C compile features
+[0.707s] -- Detecting C compile features - done
+[0.722s] -- Detecting CXX compiler ABI info
+[0.880s] -- Detecting CXX compiler ABI info - done
+[0.891s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.892s] -- Detecting CXX compile features
+[0.892s] -- Detecting CXX compile features - done
+[0.904s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.196s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.552s] -- Configuring done (1.2s)
+[1.554s] -- Generating done (0.0s)
+[1.555s] -- Build files have been written to: /home/kaneki/cobot_ws/build/clearpath_mounts_description
+[1.560s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_mounts_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kaneki/cobot_ws/src/clearpath_common/clearpath_mounts_description -DCMAKE_INSTALL_PREFIX=/home/kaneki/cobot_ws/install/clearpath_mounts_description
+[1.561s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_mounts_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_mounts_description -- -j16 -l16
+[1.675s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_mounts_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_mounts_description -- -j16 -l16
+[1.702s] Invoking command in '/home/kaneki/cobot_ws/build/clearpath_mounts_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_mounts_description
+[1.702s] -- Install configuration: ""
+[1.702s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/sick_upright.stl
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/sick_inverted.dae
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/fath_pivot_mount_base.dae
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/disk.stl
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/fath_pivot_mount.dae
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_40.stl
+[1.703s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_vertical.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_20.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_horizontal_large.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_80.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_horizontal.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/bracket_extension_60.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/riser_1x7.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/meshes/pacs/riser_8x7.stl
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf
+[1.704s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/disk.urdf.xacro
+[1.705s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/sick.urdf.xacro
+[1.705s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/fath_pivot.urdf.xacro
+[1.705s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/post.urdf.xacro
+[1.705s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs
+[1.705s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs/riser_leg.urdf.xacro
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs/bracket.urdf.xacro
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/urdf/pacs/riser.urdf.xacro
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/ament_index/resource_index/package_run_dependencies/clearpath_mounts_description
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/ament_index/resource_index/parent_prefix_path/clearpath_mounts_description
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/ament_prefix_path.sh
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/ament_prefix_path.dsv
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/path.sh
+[1.706s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/environment/path.dsv
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.bash
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.sh
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.zsh
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/local_setup.dsv
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/package.dsv
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/ament_index/resource_index/packages/clearpath_mounts_description
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/cmake/clearpath_mounts_descriptionConfig.cmake
+[1.707s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/cmake/clearpath_mounts_descriptionConfig-version.cmake
+[1.708s] -- Installing: /home/kaneki/cobot_ws/install/clearpath_mounts_description/share/clearpath_mounts_description/package.xml
+[1.732s] Invoked command in '/home/kaneki/cobot_ws/build/clearpath_mounts_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kaneki/warebot_ws/install/warebot:/home/kaneki/warebot_ws/install/clearpath_config:/home/kaneki/ros2_ws/install/rqt_joint_trajectory_controller:/home/kaneki/ros2_ws/install/rqt_controller_manager:/home/kaneki/ros2_ws/install/ros2controlcli:/home/kaneki/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_mounts_description

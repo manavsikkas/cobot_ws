@@ -1,0 +1,21 @@
+[0.717s] Invoking command in '/home/kaneki/warebot_ws/src/warebot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kaneki/warebot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/warebot_ws/build/warebot/build install --record /home/kaneki/warebot_ws/build/warebot/install.log --single-version-externally-managed install_data
+[0.950s] running egg_info
+[0.967s] writing ../../build/warebot/warebot.egg-info/PKG-INFO
+[0.967s] writing dependency_links to ../../build/warebot/warebot.egg-info/dependency_links.txt
+[0.967s] writing requirements to ../../build/warebot/warebot.egg-info/requires.txt
+[0.967s] writing top-level names to ../../build/warebot/warebot.egg-info/top_level.txt
+[1.002s] reading manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[1.003s] writing manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[1.004s] running build
+[1.004s] running build_py
+[1.004s] running install
+[1.009s] running install_lib
+[1.027s] running install_data
+[1.027s] copying launch/display.launch.py -> /home/kaneki/warebot_ws/install/warebot/share/warebot/launch
+[1.028s] copying config/ros2_control.yaml -> /home/kaneki/warebot_ws/install/warebot/share/warebot/config
+[1.028s] running install_egg_info
+[1.045s] removing '/home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info' (and everything under it)
+[1.045s] Copying ../../build/warebot/warebot.egg-info to /home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info
+[1.046s] running install_scripts
+[1.172s] writing list of installed files to '/home/kaneki/warebot_ws/build/warebot/install.log'
+[1.202s] Invoked command in '/home/kaneki/warebot_ws/src/warebot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kaneki/warebot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/warebot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/warebot_ws/build/warebot/build install --record /home/kaneki/warebot_ws/build/warebot/install.log --single-version-externally-managed install_data

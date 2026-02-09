@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- ========================================= -->
+  <!-- ros2_control Hardware Interface           -->
+  <!-- ========================================= -->
+
+  <xacro:macro name="a200_ros2_control" params="use_sim:=true">
+
+    <ros2_control name="GazeboA200System" type="system">
+      <!-- Gazebo Simulation (gz-sim / Harmonic) -->
+      <hardware>
+        <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+      </hardware>
+
+      <!-- ===== WHEEL JOINTS ===== -->
+      <!-- All 4 wheels with velocity command and position/velocity feedback -->
+
+      <!-- Front Left Wheel -->
+      <joint name="front_left_wheel_joint">
+        <command_interface name="velocity">
+          <param name="min">-20.0</param>
+          <param name="max">20.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+
+      <!-- Front Right Wheel -->
+      <joint name="front_right_wheel_joint">
+        <command_interface name="velocity">
+          <param name="min">-20.0</param>
+          <param name="max">20.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+
+      <!-- Rear Left Wheel -->
+      <joint name="rear_left_wheel_joint">
+        <command_interface name="velocity">
+          <param name="min">-20.0</param>
+          <param name="max">20.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+
+      <!-- Rear Right Wheel -->
+      <joint name="rear_right_wheel_joint">
+        <command_interface name="velocity">
+          <param name="min">-20.0</param>
+          <param name="max">20.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+
+    </ros2_control>
+
+    <!-- ========================================= -->
+    <!-- Gazebo ros2_control Plugin (Model level) -->
+    <!-- ========================================= -->
+    <xacro:if value="${use_sim}">
+      <gazebo>
+        <!-- Full path to .so so Gazebo finds it when loading from model (GZ_SIM_SYSTEM_PLUGIN_PATH may not apply) -->
+        <plugin filename="/home/kaneki/ros2_ws/install/gz_ros2_control/lib/libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+          <parameters>/home/kaneki/warebot_ws/install/warebot/share/warebot/config/ros2_control.yaml</parameters>
+        </plugin>
+      </gazebo>
+    </xacro:if>
+
+  </xacro:macro>
+
+</robot>
