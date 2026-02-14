@@ -1,0 +1,86 @@
+[0.642s] Invoking command in '/home/kaneki/cobot_ws/src/warebot': PYTHONPATH=/home/kaneki/cobot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/cobot_ws/build/warebot/build install --record /home/kaneki/cobot_ws/build/warebot/install.log --single-version-externally-managed install_data
+[0.848s] running egg_info
+[0.848s] creating ../../build/warebot/warebot.egg-info
+[0.863s] writing ../../build/warebot/warebot.egg-info/PKG-INFO
+[0.863s] writing dependency_links to ../../build/warebot/warebot.egg-info/dependency_links.txt
+[0.863s] writing requirements to ../../build/warebot/warebot.egg-info/requires.txt
+[0.863s] writing top-level names to ../../build/warebot/warebot.egg-info/top_level.txt
+[0.863s] writing manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[0.895s] reading manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[0.896s] writing manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[0.896s] running build
+[0.896s] running build_py
+[0.897s] creating /home/kaneki/cobot_ws/build/warebot/build
+[0.897s] creating /home/kaneki/cobot_ws/build/warebot/build/lib
+[0.897s] creating /home/kaneki/cobot_ws/build/warebot/build/lib/warebot
+[0.897s] copying warebot/__init__.py -> /home/kaneki/cobot_ws/build/warebot/build/lib/warebot
+[0.897s] running install
+[0.900s] running install_lib
+[0.916s] creating /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot
+[0.916s] copying /home/kaneki/cobot_ws/build/warebot/build/lib/warebot/__init__.py -> /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot
+[0.916s] byte-compiling /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot/__init__.py to __init__.cpython-312.pyc
+[0.916s] running install_data
+[0.916s] creating /home/kaneki/cobot_ws/install/warebot/share/ament_index
+[0.917s] creating /home/kaneki/cobot_ws/install/warebot/share/ament_index/resource_index
+[0.917s] creating /home/kaneki/cobot_ws/install/warebot/share/ament_index/resource_index/packages
+[0.917s] copying resource/warebot -> /home/kaneki/cobot_ws/install/warebot/share/ament_index/resource_index/packages
+[0.917s] copying package.xml -> /home/kaneki/cobot_ws/install/warebot/share/warebot
+[0.917s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/launch
+[0.917s] copying launch/rsp.launch.py -> /home/kaneki/cobot_ws/install/warebot/share/warebot/launch
+[0.917s] copying launch/display.launch.py -> /home/kaneki/cobot_ws/install/warebot/share/warebot/launch
+[0.918s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/description
+[0.918s] copying description/ros2_control.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description
+[0.918s] copying description/robot.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description
+[0.918s] copying description/common.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description
+[0.918s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200
+[0.918s] copying description/a200/a200.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200
+[0.918s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/attachments
+[0.918s] copying description/a200/attachments/sensor_arch.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/attachments
+[0.918s] copying description/a200/attachments/observer_backpack.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/attachments
+[0.918s] copying description/a200/attachments/top_plate.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/attachments
+[0.918s] copying description/a200/attachments/bumper.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/attachments
+[0.919s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/drivetrain
+[0.919s] copying description/a200/drivetrain/wheels.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/drivetrain
+[0.919s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+[0.919s] copying description/a200/drivetrain/wheels/indoor.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+[0.919s] copying description/a200/drivetrain/wheels/outdoor.urdf.xacro -> /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/drivetrain/wheels
+[0.919s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes
+[0.919s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200
+[0.919s] copying meshes/a200/top_chassis.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200
+[0.919s] copying meshes/a200/base_link.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200
+[0.919s] copying meshes/a200/base_link.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200
+[0.919s] copying meshes/a200/top_chassis.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200
+[0.920s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.920s] copying meshes/a200/attachments/user_rail.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.920s] copying meshes/a200/attachments/bumper3.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.920s] copying meshes/a200/attachments/large_top_plate.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.920s] copying meshes/a200/attachments/top_plate.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.920s] copying meshes/a200/attachments/bumper.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/bumper_extension.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/bumper2.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/300_mm_sensor_arch.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/510_mm_sensor_arch.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/top_plate.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/510_mm_sensor_arch.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/300_mm_sensor_arch.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/observer_backpack_masts.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.921s] copying meshes/a200/attachments/large_top_plate_collision.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.922s] copying meshes/a200/attachments/user_rail.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.922s] copying meshes/a200/attachments/observer_backpack_shell.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.922s] copying meshes/a200/attachments/pacs_top_plate.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/attachments
+[0.922s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/drivetrain
+[0.923s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/wheels
+[0.923s] copying meshes/a200/wheels/outdoor.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/wheels
+[0.924s] copying meshes/a200/wheels/indoor.dae -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/wheels
+[0.926s] copying meshes/a200/wheels/outdoor.stl -> /home/kaneki/cobot_ws/install/warebot/share/warebot/meshes/a200/wheels
+[0.927s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/world
+[0.927s] copying world/empty.world -> /home/kaneki/cobot_ws/install/warebot/share/warebot/world
+[0.928s] creating /home/kaneki/cobot_ws/install/warebot/share/warebot/config
+[0.928s] copying config/ros2_control.yaml -> /home/kaneki/cobot_ws/install/warebot/share/warebot/config
+[0.928s] copying config/robot.yaml -> /home/kaneki/cobot_ws/install/warebot/share/warebot/config
+[0.928s] copying config/gz_ros2_use_sim.yaml -> /home/kaneki/cobot_ws/install/warebot/share/warebot/config
+[0.928s] running install_egg_info
+[0.944s] Copying ../../build/warebot/warebot.egg-info to /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info
+[0.945s] running install_scripts
+[1.049s] writing list of installed files to '/home/kaneki/cobot_ws/build/warebot/install.log'
+[1.070s] Invoked command in '/home/kaneki/cobot_ws/src/warebot' returned '0': PYTHONPATH=/home/kaneki/cobot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/cobot_ws/build/warebot/build install --record /home/kaneki/cobot_ws/build/warebot/install.log --single-version-externally-managed install_data

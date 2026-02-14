@@ -3,43 +3,135 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable, IncludeLaunchDescription, TimerAction
-from launch.actions import ExecuteProcess, RegisterEventHandler
+from launch.actions import (
+    DeclareLaunchArgument,
+    SetEnvironmentVariable,
+    IncludeLaunchDescription,
+    TimerAction,
+    ExecuteProcess,
+    RegisterEventHandler,
+)
 from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, Command
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    
+
     # =========================================
-    # VM / Software Rendering Fixes
+    # VMware / Software Rendering Fixes
     # =========================================
-    libgl_env = SetEnvironmentVariable('LIBGL_ALWAYS_SOFTWARE', '1')
-    ogre_env = SetEnvironmentVariable('OGRE_RTT_MODE', 'Copy')
-    mesa_env = SetEnvironmentVariable('MESA_GL_VERSION_OVERRIDE', '3.3')
-    gz_render_env = SetEnvironmentVariable('GZ_SIM_RENDER_ENGINE', 'ogre2')
-    
+    # Ogre 1.x uses GLX which works with LIBGL_ALWAYS_SOFTWARE.
+    # Ogre 2.x uses EGL which crashes in VMware because EGL rejects
+    # forced software rendering.  Stick with ogre (1.x) for VMs.
+    vm_env_vars = [
+        SetEnvironmentVariable('LIBGL_ALWAYS_SOFTWARE', '1'),
+        SetEnvironmentVariable('SVGA_VGPU10', '0'),
+        SetEnvironmentVariable('GALLIUM_DRIVER', 'llvmpipe'),
+        SetEnvironmentVariable('MESA_GL_VERSION_OVERRIDE', '3.3'),
+        SetEnvironmentVariable('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'),
+        SetEnvironmentVariable('OGRE_RTT_MODE', 'Copy'),
+    ]
+
     # Get the package directory
     pkg_warebot = get_package_share_directory('warebot')
-    
+
     # =========================================
-    # Gazebo Resource/Plugin Paths
+    # Gazebo Resource Paths
     # =========================================
     install_share_dir = os.path.dirname(pkg_warebot)
-    gz_resource_path = SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', install_share_dir)
-    ign_resource_path = SetEnvironmentVariable('IGN_GAZEBO_RESOURCE_PATH', install_share_dir)
-    
-    # Plugin path for gz_ros2_control - include both system and user paths
-    gz_plugin_path = SetEnvironmentVariable(
-        'GZ_SIM_SYSTEM_PLUGIN_PATH',
-        '/opt/ros/jazzy/lib:/home/kaneki/ros2_ws/install/gz_ros2_control/lib'
-    )
-    
+    ros_share_dir = '/opt/ros/jazzy/share'
+    gz_resource_path = os.pathsep.join([install_share_dir, ros_share_dir])
+    gz_env_vars = [
+        SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', gz_resource_path),
+        SetEnvironmentVariable('IGN_GAZEBO_RESOURCE_PATH', gz_resource_path),
+    ]
+
     use_sim_time = LaunchConfiguration('use_sim_time')
 
-    # Robot State Publisher (launched via rsp.launch.py, like prac_bot)
+    # =========================================
+    # Generate SDF from URDF
+    # =========================================
+    # Spawn from SDF file so the gz_ros2_control plugin is preserved
+    # (gz create -topic URDF conversion can drop Gazebo plugins)
+    sdf_file = '/tmp/warebot.sdf'
+    xacro_path = os.path.join(pkg_warebot, 'description', 'robot.urdf.xacro')
+    generate_sdf = ExecuteProcess(
+        cmd=[
+            'sh', '-c',
+            f'xacro {xacro_path} use_sim:=true > /tmp/warebot.urdf '
+            f'&& gz sdf -p /tmp/warebot.urdf > {sdf_file}'
+        ],
+        shell=False,
+        output='screen',
+    )
+
+    # =========================================
+    # Gazebo Simulator
+    # =========================================
+    default_world = os.path.join(pkg_warebot, 'world', 'empty.world')
+    world_arg = DeclareLaunchArgument(
+        'world', default_value=default_world, description='World to load'
+    )
+
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            os.path.join(
+                get_package_share_directory('ros_gz_sim'),
+                'launch', 'gz_sim.launch.py'
+            )
+        ]),
+        launch_arguments={
+            'gz_args': ['-r -v4 --render-engine ogre ', LaunchConfiguration('world')],
+            'on_exit_shutdown': 'true'
+        }.items()
+    )
+
+    # =========================================
+    # Gazebo-ROS Bridge (clock + sensors)
+    # =========================================
+    gz_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        name='gz_bridge',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}],
+        arguments=[
+            # Clock
+            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
+            # Velodyne VLP-16 LiDAR
+            '/sensors/velodyne/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/sensors/velodyne/scan/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+            # Intel RealSense D435 depth camera
+            '/sensors/realsense/image@sensor_msgs/msg/Image[gz.msgs.Image',
+            '/sensors/realsense/depth_image@sensor_msgs/msg/Image[gz.msgs.Image',
+            '/sensors/realsense/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
+            '/sensors/realsense/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+        ],
+    )
+
+    # =========================================
+    # Spawn robot in Gazebo
+    # =========================================
+    spawn_entity = Node(
+        package='ros_gz_sim',
+        executable='create',
+        name='spawn_entity',
+        output='screen',
+        arguments=['-file', sdf_file, '-name', 'warebot', '-z', '0.5'],
+    )
+
+    # =========================================
+    # Robot State Publisher
+    # =========================================
+    # CRITICAL: RSP publishes robot_description with transient_local QoS.
+    # The gz_ros2_control plugin's controller_manager subscribes to this
+    # topic.  When it receives the URDF it calls GazeboSimSystem::read()
+    # which segfaults if the Gazebo entity joints have not been registered
+    # yet.  We therefore gate RSP behind OnProcessExit(spawn_entity) plus
+    # an extra delay so the plugin has time to run Configure() and at
+    # least one PreUpdate() cycle (which registers the ECM joints).
     rsp = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(pkg_warebot, 'launch', 'rsp.launch.py')
@@ -47,16 +139,22 @@ def generate_launch_description():
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
-    # Joint State Publisher (fallback for RViz if ros2_control fails)
-    joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
+    # =========================================
+    # Static TF: map -> odom (identity)
+    # =========================================
+    # Placeholder until a localization node (e.g. AMCL, EKF) is added.
+    static_tf_map_odom = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_map_odom',
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        parameters=[{'use_sim_time': use_sim_time}],
     )
-    
+
+    # =========================================
     # RViz2
+    # =========================================
     rviz_config_file = os.path.join(pkg_warebot, 'config', 'display.rviz')
     rviz_node = Node(
         package='rviz2',
@@ -64,85 +162,15 @@ def generate_launch_description():
         name='rviz2',
         output='screen',
         arguments=['-d', rviz_config_file] if os.path.exists(rviz_config_file) else [],
-        parameters=[{'use_sim_time': use_sim_time}]
-    )
-
-    # World argument
-    default_world = os.path.join(pkg_warebot, 'world', 'empty.world')
-    world_arg = DeclareLaunchArgument(
-        'world',
-        default_value=default_world,
-        description='World to load'
-    )
-
-    # Gazebo launch
-    gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')]),
-        launch_arguments={
-            'gz_args': ['-r -v4 --render-engine ogre ', LaunchConfiguration('world')],
-            'on_exit_shutdown': 'true'
-        }.items()
-    )
-    
-    # Generate SDF from URDF so the gz_ros2_control plugin is preserved (create -topic can drop it)
-    sdf_file = '/tmp/warebot.sdf'
-    xacro_path = os.path.join(pkg_warebot, 'description', 'robot.urdf.xacro')
-    generate_sdf = ExecuteProcess(
-        cmd=['sh', '-c', f'xacro {xacro_path} use_sim:=true > /tmp/warebot.urdf && gz sdf -p /tmp/warebot.urdf > {sdf_file}'],
-        shell=False,
-        output='screen',
-    )
-
-    # Publish robot_description to topic before spawn so gz_ros2_control plugin gets it (transient_local)
-    # RSP republishes too, but plugin loads when model spawns so we ensure message is on topic just before
-    publish_robot_description = ExecuteProcess(
-        cmd=['python3', '-c', (
-            'import rclpy\n'
-            'from rclpy.node import Node\n'
-            'from rclpy.qos import QoSProfile, DurabilityPolicy, HistoryPolicy\n'
-            'from std_msgs.msg import String\n'
-            'rclpy.init()\n'
-            'n = Node("rd_pub")\n'
-            'with open("/tmp/warebot.urdf") as f: urdf = f.read()\n'
-            'q = QoSProfile(depth=1, durability=DurabilityPolicy.TRANSIENT_LOCAL, history=HistoryPolicy.KEEP_LAST)\n'
-            'p = n.create_publisher(String, "robot_description", q)\n'
-            'p.publish(String(data=urdf))\n'
-            'for _ in range(20): rclpy.spin_once(n, timeout_sec=0.1)\n'
-            'n.destroy_node()\n'
-            'rclpy.shutdown()\n'
-        )],
-        shell=False,
-        output='screen',
-    )
-
-    # Spawn robot from SDF (ensures plugin is loaded; -topic URDF conversion may omit it)
-    spawn_entity = Node(
-        package='ros_gz_sim',
-        executable='create',
-        name='spawn_entity',
-        output='screen',
-        arguments=['-file', sdf_file, '-name', 'warebot', '-z', '0.5']
+        parameters=[{'use_sim_time': use_sim_time}],
     )
 
     # =========================================
-    # Gazebo-ROS Bridge (clock only)
+    # ros2_control Controller Spawners
     # =========================================
-    gz_bridge = Node(
-        package='ros_gz_bridge',
-        executable='parameter_bridge',
-        name='gz_bridge',
-        output='screen',
-        arguments=['/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock'],
-    )
-
-    # =========================================
-    # ros2_control Controller Spawners (sequential: diff_drive after joint_state_broadcaster)
-    # Must activate joint_state_broadcaster first; diff_drive_controller fails to activate if run alone.
-    # For manual testing: ros2 run controller_manager spawner joint_state_broadcaster
-    #                    then ros2 run controller_manager spawner diff_drive_controller
-    # =========================================
+    # Sequential: joint_state_broadcaster must be active before diff_drive_controller.
     ros2_control_config = os.path.join(pkg_warebot, 'config', 'ros2_control.yaml')
+
     joint_state_broadcaster_spawner = Node(
         package='controller_manager',
         executable='spawner',
@@ -171,53 +199,74 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}],
     )
 
-    # Load diff_drive_controller only after joint_state_broadcaster has started
-    delayed_diff_drive = RegisterEventHandler(
+    # =========================================
+    # Launch sequence (event-driven)
+    # =========================================
+    # 0s  - Generate SDF, start Gazebo, clock bridge
+    # 6s  - Spawn model in Gazebo
+    # spawn_exit + 5s  - RSP (publishes robot_description for controller_manager)
+    # spawn_exit + 8s  - joint_state_broadcaster
+    # jsb_exit         - diff_drive_controller
+    # ddc_exit         - RViz (odom frame now available)
+
+    # After spawn_entity exits, wait then start RSP
+    after_spawn_rsp = RegisterEventHandler(
+        OnProcessExit(
+            target_action=spawn_entity,
+            on_exit=[TimerAction(period=5.0, actions=[rsp, static_tf_map_odom])],
+        )
+    )
+
+    # After spawn_entity exits, wait then start joint_state_broadcaster
+    after_spawn_jsb = RegisterEventHandler(
+        OnProcessExit(
+            target_action=spawn_entity,
+            on_exit=[
+                TimerAction(period=8.0, actions=[joint_state_broadcaster_spawner])
+            ],
+        )
+    )
+
+    # After joint_state_broadcaster exits, start diff_drive_controller
+    after_jsb_ddc = RegisterEventHandler(
         OnProcessExit(
             target_action=joint_state_broadcaster_spawner,
             on_exit=[diff_drive_controller_spawner],
         )
     )
 
+    # After diff_drive_controller spawner exits, start RViz (odom frame exists now)
+    after_ddc_rviz = RegisterEventHandler(
+        OnProcessExit(
+            target_action=diff_drive_controller_spawner,
+            on_exit=[rviz_node],
+        )
+    )
+
     return LaunchDescription([
-        # Environment variables (set first)
-        libgl_env,
-        ogre_env,
-        mesa_env,
-        gz_render_env,
-        gz_resource_path,
-        ign_resource_path,
-        gz_plugin_path,
-        
+        # Environment
+        *vm_env_vars,
+        *gz_env_vars,
+
         # Launch arguments
         DeclareLaunchArgument('use_sim_time', default_value='true'),
         world_arg,
-        
-        # 0. Generate SDF from URDF (keeps gz_ros2_control plugin; run early so /tmp/warebot.sdf exists)
+
+        # 0. Generate SDF from URDF (run early so /tmp/warebot.sdf is ready)
         generate_sdf,
-        
+
         # 1. Launch Gazebo
         gazebo,
-        
-        # 2. Bridge clock from Gazebo to ROS
+
+        # 2. Bridge clock + sensor topics from Gazebo to ROS
         gz_bridge,
-        
-        # 3. Robot state publisher (rsp republishes robot_description to topic for controller_manager)
-        rsp,
-        
-        # 4. Joint state publisher (fallback for RViz if ros2_control not ready)
-        joint_state_publisher_node,
-        
-        # 5. Publish robot_description to topic just before spawn (so controller_manager gets it when plugin loads)
-        TimerAction(period=3.5, actions=[publish_robot_description]),
-        
-        # 6. Spawn robot in Gazebo (delayed so Gazebo is up)
-        TimerAction(period=4.0, actions=[spawn_entity]),
-        
-        # 7. RViz (delayed so TF is available)
-        TimerAction(period=6.0, actions=[rviz_node]),
-        
-        # 8. Controller spawners: joint_state_broadcaster first, then diff_drive (after first exits)
-        TimerAction(period=10.0, actions=[joint_state_broadcaster_spawner]),
-        delayed_diff_drive,
+
+        # 3. Spawn robot in Gazebo (delayed for Gazebo to initialise)
+        TimerAction(period=6.0, actions=[spawn_entity]),
+
+        # 4-7. Event-driven chain (all gated behind spawn_entity completion)
+        after_spawn_rsp,     # spawn done + 5s -> RSP
+        after_spawn_jsb,     # spawn done + 8s -> joint_state_broadcaster
+        after_jsb_ddc,       # jsb done        -> diff_drive_controller
+        after_ddc_rviz,      # ddc done        -> RViz (odom frame ready)
     ])

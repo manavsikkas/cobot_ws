@@ -1,2 +1,0 @@
-planning_pipelines: ['chomp', 'pilz', 'ompl']
-default_planning_pipeline: 'ompl'

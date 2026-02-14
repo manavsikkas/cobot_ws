@@ -4,6 +4,7 @@
 /home/kaneki/cobot_ws/install/warebot/share/warebot/package.xml
 /home/kaneki/cobot_ws/install/warebot/share/warebot/launch/rsp.launch.py
 /home/kaneki/cobot_ws/install/warebot/share/warebot/launch/display.launch.py
+/home/kaneki/cobot_ws/install/warebot/share/warebot/description/ros2_control.urdf.xacro
 /home/kaneki/cobot_ws/install/warebot/share/warebot/description/robot.urdf.xacro
 /home/kaneki/cobot_ws/install/warebot/share/warebot/description/common.urdf.xacro
 /home/kaneki/cobot_ws/install/warebot/share/warebot/description/a200/a200.urdf.xacro
@@ -43,6 +44,7 @@
 /home/kaneki/cobot_ws/install/warebot/share/warebot/config/ros2_control.yaml
 /home/kaneki/cobot_ws/install/warebot/share/warebot/config/robot.yaml
 /home/kaneki/cobot_ws/install/warebot/share/warebot/config/gz_ros2_use_sim.yaml
+/home/kaneki/cobot_ws/install/warebot/share/warebot/config/display.rviz
 /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info/top_level.txt
 /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info/SOURCES.txt
 /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info/PKG-INFO

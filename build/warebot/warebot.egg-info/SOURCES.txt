@@ -7,11 +7,13 @@ setup.py
 ../../build/warebot/warebot.egg-info/requires.txt
 ../../build/warebot/warebot.egg-info/top_level.txt
 ../../build/warebot/warebot.egg-info/zip-safe
+config/display.rviz
 config/gz_ros2_use_sim.yaml
 config/robot.yaml
 config/ros2_control.yaml
 description/common.urdf.xacro
 description/robot.urdf.xacro
+description/ros2_control.urdf.xacro
 description/a200/a200.urdf.xacro
 description/a200/attachments/bumper.urdf.xacro
 description/a200/attachments/observer_backpack.urdf.xacro

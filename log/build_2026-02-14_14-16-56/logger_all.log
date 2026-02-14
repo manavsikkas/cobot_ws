@@ -1,0 +1,357 @@
+[0.158s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-up-to', 'warebot', '--allow-overriding', 'clearpath_sensors_description']
+[0.158s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=['warebot'], packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=['clearpath_sensors_description'], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d9d43a8c530>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d9d43a8c230>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d9d43a8c230>>, mixin_verb=('build',))
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.216s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kaneki/cobot_ws'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'ros'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extensions ['cmake', 'python']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'cmake'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'python'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extensions ['python_setup_py']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common) by extension 'python_setup_py'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_bt_joy) by extension 'ros'
+[0.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_bt_joy' with type 'ros.ament_python' and name 'clearpath_bt_joy'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_common) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_common' with type 'ros.ament_cmake' and name 'clearpath_common'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_control) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_control' with type 'ros.ament_cmake' and name 'clearpath_control'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_customization) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_customization' with type 'ros.ament_cmake' and name 'clearpath_customization'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_description) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_description' with type 'ros.ament_cmake' and name 'clearpath_description'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_diagnostics) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_diagnostics' with type 'ros.ament_cmake' and name 'clearpath_diagnostics'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_generator_common) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_generator_common' with type 'ros.ament_cmake' and name 'clearpath_generator_common'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_manipulators' with type 'ros.ament_cmake' and name 'clearpath_manipulators'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_manipulators_description) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_manipulators_description' with type 'ros.ament_cmake' and name 'clearpath_manipulators_description'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_mounts_description) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_mounts_description' with type 'ros.ament_cmake' and name 'clearpath_mounts_description'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_platform_description) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_platform_description' with type 'ros.ament_cmake' and name 'clearpath_platform_description'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_common/clearpath_sensors_description) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_common/clearpath_sensors_description' with type 'ros.ament_cmake' and name 'clearpath_sensors_description'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extensions ['colcon_meta']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/clearpath_config) by extension 'ros'
+[0.280s] DEBUG:colcon.colcon_core.package_identification:Package 'src/clearpath_config' with type 'ros.ament_python' and name 'clearpath_config'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(src/warebot) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/warebot' with type 'ros.ament_python' and name 'warebot'
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.312s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_description depends on clearpath_sensors_description which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.312s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_description depends on clearpath_manipulators_description which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_description depends on clearpath_platform_description which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_description depends on clearpath_mounts_description which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_generator_common depends on clearpath_description which has version 2.8.5 which satisfies to be greater than or equal to 2.8.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_generator_common depends on clearpath_manipulators which has version 2.8.5 which satisfies to be greater than or equal to 2.8.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_generator_common depends on clearpath_diagnostics which has version 2.8.5 which satisfies to be greater than or equal to 2.8.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_generator_common depends on clearpath_config which has version 2.8.2 which satisfies to be greater than or equal to 2.8.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_generator_common depends on clearpath_control which has version 2.8.5 which satisfies to be greater than or equal to 2.8.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_manipulators depends on clearpath_manipulators_description which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_common depends on clearpath_generator_common which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_common depends on clearpath_description which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.313s] DEBUG:colcon.colcon_core.package_augmentation.check_dependency_constraint:clearpath_common depends on clearpath_control which has version 2.8.5 which satisfies to be greater than or equal to 2.5.0
+[0.315s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_common' in 'src/clearpath_common/clearpath_common'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_generator_common' in 'src/clearpath_common/clearpath_generator_common'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_manipulators' in 'src/clearpath_common/clearpath_manipulators'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_description' in 'src/clearpath_common/clearpath_description'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_control' in 'src/clearpath_common/clearpath_control'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_platform_description' in 'src/clearpath_common/clearpath_platform_description'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_mounts_description' in 'src/clearpath_common/clearpath_mounts_description'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_manipulators_description' in 'src/clearpath_common/clearpath_manipulators_description'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_diagnostics' in 'src/clearpath_common/clearpath_diagnostics'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_customization' in 'src/clearpath_common/clearpath_customization'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_config' in 'src/clearpath_config'
+[0.316s] INFO:colcon.colcon_core.package_selection:Skipping package 'clearpath_bt_joy' in 'src/clearpath_common/clearpath_bt_joy'
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.321s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 514 installed packages in /opt/ros/jazzy
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'cmake_target' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.427s] Level 5:colcon.colcon_core.verb:set package 'clearpath_sensors_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.428s] DEBUG:colcon.colcon_core.verb:Building package 'clearpath_sensors_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kaneki/cobot_ws/build/clearpath_sensors_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kaneki/cobot_ws/install/clearpath_sensors_description', 'merge_install': False, 'path': '/home/kaneki/cobot_ws/src/clearpath_common/clearpath_sensors_description', 'symlink_install': False, 'test_result_base': None}
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'cmake_target' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'cmake_clean_first' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'cmake_force_configure' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'ament_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'warebot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.428s] DEBUG:colcon.colcon_core.verb:Building package 'warebot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kaneki/cobot_ws/build/warebot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kaneki/cobot_ws/install/warebot', 'merge_install': False, 'path': '/home/kaneki/cobot_ws/src/warebot', 'symlink_install': False, 'test_result_base': None}
+[0.428s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.430s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.431s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kaneki/cobot_ws/src/clearpath_common/clearpath_sensors_description' with build type 'ament_cmake'
+[0.433s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kaneki/cobot_ws/src/clearpath_common/clearpath_sensors_description'
+[0.436s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_sensors_description -- -j16 -l16
+[0.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/kaneki/cobot_ws/build/clearpath_sensors_description -- -j16 -l16
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_sensors_description
+[0.566s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(clearpath_sensors_description)
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description' for CMake module files
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description' for CMake config files
+[0.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('clearpath_sensors_description', 'cmake_prefix_path')
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/hook/cmake_prefix_path.ps1'
+[0.577s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/hook/cmake_prefix_path.dsv'
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/hook/cmake_prefix_path.sh'
+[0.582s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kaneki/cobot_ws/build/clearpath_sensors_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/kaneki/cobot_ws/build/clearpath_sensors_description
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/bin'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/lib/pkgconfig/clearpath_sensors_description.pc'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/lib/python3.12/site-packages'
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/bin'
+[0.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.ps1'
+[0.587s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.dsv'
+[0.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.sh'
+[0.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.bash'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.zsh'
+[0.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/colcon-core/packages/clearpath_sensors_description)
+[0.595s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(clearpath_sensors_description)
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description' for CMake module files
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description' for CMake config files
+[0.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('clearpath_sensors_description', 'cmake_prefix_path')
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/hook/cmake_prefix_path.ps1'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/hook/cmake_prefix_path.dsv'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/hook/cmake_prefix_path.sh'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/bin'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/lib/pkgconfig/clearpath_sensors_description.pc'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/lib/python3.12/site-packages'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/clearpath_sensors_description/bin'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.ps1'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.dsv'
+[0.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.sh'
+[0.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.bash'
+[0.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/clearpath_sensors_description/package.zsh'
+[0.604s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kaneki/cobot_ws/install/clearpath_sensors_description/share/colcon-core/packages/clearpath_sensors_description)
+[0.604s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kaneki/cobot_ws/src/warebot' with build type 'ament_python'
+[0.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('warebot', 'ament_prefix_path')
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/warebot/share/warebot/hook/ament_prefix_path.ps1'
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kaneki/cobot_ws/install/warebot/share/warebot/hook/ament_prefix_path.dsv'
+[0.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/warebot/share/warebot/hook/ament_prefix_path.sh'
+[0.612s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.612s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.918s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kaneki/cobot_ws/src/warebot'
+[0.919s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.919s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kaneki/cobot_ws/src/warebot': AMENT_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/kaneki/cobot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/cobot_ws/build/warebot/build install --record /home/kaneki/cobot_ws/build/warebot/install.log --single-version-externally-managed install_data
+[2.563s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/warebot' for CMake module files
+[2.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kaneki/cobot_ws/src/warebot' returned '0': AMENT_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/kaneki/cobot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/cobot_ws/build/warebot/build install --record /home/kaneki/cobot_ws/build/warebot/install.log --single-version-externally-managed install_data
+[2.565s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/warebot' for CMake config files
+[2.566s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/warebot/lib'
+[2.567s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/warebot/bin'
+[2.567s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/warebot/lib/pkgconfig/warebot.pc'
+[2.567s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages'
+[2.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('warebot', 'pythonpath')
+[2.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/warebot/share/warebot/hook/pythonpath.ps1'
+[2.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kaneki/cobot_ws/install/warebot/share/warebot/hook/pythonpath.dsv'
+[2.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kaneki/cobot_ws/install/warebot/share/warebot/hook/pythonpath.sh'
+[2.571s] Level 1:colcon.colcon_core.environment:checking '/home/kaneki/cobot_ws/install/warebot/bin'
+[2.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(warebot)
+[2.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/warebot/share/warebot/package.ps1'
+[2.572s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kaneki/cobot_ws/install/warebot/share/warebot/package.dsv'
+[2.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/warebot/share/warebot/package.sh'
+[2.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/warebot/share/warebot/package.bash'
+[2.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/kaneki/cobot_ws/install/warebot/share/warebot/package.zsh'
+[2.574s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kaneki/cobot_ws/install/warebot/share/colcon-core/packages/warebot)
+[2.575s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.575s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.575s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.575s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.585s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.585s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.585s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.585s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[2.585s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kaneki/cobot_ws/install/local_setup.ps1'
+[2.587s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kaneki/cobot_ws/install/_local_setup_util_ps1.py'
+[2.589s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kaneki/cobot_ws/install/setup.ps1'
+[2.593s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kaneki/cobot_ws/install/local_setup.sh'
+[2.594s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kaneki/cobot_ws/install/_local_setup_util_sh.py'
+[2.594s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kaneki/cobot_ws/install/setup.sh'
+[2.596s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kaneki/cobot_ws/install/local_setup.bash'
+[2.596s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kaneki/cobot_ws/install/setup.bash'
+[2.598s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kaneki/cobot_ws/install/local_setup.zsh'
+[2.598s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kaneki/cobot_ws/install/setup.zsh'

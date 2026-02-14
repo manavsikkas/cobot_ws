@@ -59,16 +59,18 @@
   <!-- ========================================= -->
   <!-- Sensors                                   -->
   <!-- ========================================= -->
-  <!-- TODO: Add sensors (LiDAR, cameras, etc.) -->
-  <!-- Example for LiDAR:
-  <xacro:include filename="$(find clearpath_sensors_description)/urdf/sick_lms1xx.urdf.xacro"/>
-  <xacro:sick_lms1xx 
-    name="front_laser" 
-    parent_link="front_mount"
-    prefix="">
+
+  <!-- Velodyne VLP-16 3D LiDAR on front of top plate -->
+  <xacro:include filename="$(find clearpath_sensors_description)/urdf/velodyne_lidar.urdf.xacro"/>
+  <xacro:velodyne_lidar name="velodyne" parent_link="top_plate_front_mount">
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-  </xacro:sick_lms1xx>
-  -->
+  </xacro:velodyne_lidar>
+
+  <!-- Intel RealSense D435 depth camera on center of top plate -->
+  <xacro:include filename="$(find clearpath_sensors_description)/urdf/intel_realsense.urdf.xacro"/>
+  <xacro:intel_realsense name="realsense" parent_link="top_plate_default_mount" model="d435">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </xacro:intel_realsense>
 
 
   <!-- ========================================= -->

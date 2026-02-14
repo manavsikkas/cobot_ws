@@ -1,0 +1,21 @@
+[1.059s] Invoking command in '/home/kaneki/cobot_ws/src/warebot': AMENT_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/kaneki/cobot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/cobot_ws/build/warebot/build install --record /home/kaneki/cobot_ws/build/warebot/install.log --single-version-externally-managed install_data
+[1.377s] running egg_info
+[1.398s] writing ../../build/warebot/warebot.egg-info/PKG-INFO
+[1.398s] writing dependency_links to ../../build/warebot/warebot.egg-info/dependency_links.txt
+[1.398s] writing requirements to ../../build/warebot/warebot.egg-info/requires.txt
+[1.398s] writing top-level names to ../../build/warebot/warebot.egg-info/top_level.txt
+[1.447s] reading manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[1.449s] writing manifest file '../../build/warebot/warebot.egg-info/SOURCES.txt'
+[1.449s] running build
+[1.449s] running build_py
+[1.449s] running install
+[1.456s] running install_lib
+[1.483s] running install_data
+[1.483s] copying launch/display.launch.py -> /home/kaneki/cobot_ws/install/warebot/share/warebot/launch
+[1.484s] copying world/empty.world -> /home/kaneki/cobot_ws/install/warebot/share/warebot/world
+[1.485s] running install_egg_info
+[1.509s] removing '/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info' (and everything under it)
+[1.509s] Copying ../../build/warebot/warebot.egg-info to /home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages/warebot-0.0.0-py3.12.egg-info
+[1.511s] running install_scripts
+[1.680s] writing list of installed files to '/home/kaneki/cobot_ws/build/warebot/install.log'
+[1.723s] Invoked command in '/home/kaneki/cobot_ws/src/warebot' returned '0': AMENT_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kaneki/cobot_ws/install/clearpath_sensors_description:${CMAKE_PREFIX_PATH} PYTHONPATH=/home/kaneki/cobot_ws/build/warebot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kaneki/cobot_ws/install/warebot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/warebot build --build-base /home/kaneki/cobot_ws/build/warebot/build install --record /home/kaneki/cobot_ws/build/warebot/install.log --single-version-externally-managed install_data
