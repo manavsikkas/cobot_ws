@@ -20,6 +20,24 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     # =========================================
+    # Cleanup: kill leftover processes from previous launches
+    # =========================================
+    cleanup = ExecuteProcess(
+        cmd=[
+            'sh', '-c',
+            'pkill -9 -f "gz sim" 2>/dev/null; '
+            'pkill -9 -f "parameter_bridge" 2>/dev/null; '
+            'pkill -9 -f "robot_state_publisher" 2>/dev/null; '
+            'pkill -9 -f "rviz2" 2>/dev/null; '
+            'pkill -9 -f "static_transform_publisher.*map.*odom" 2>/dev/null; '
+            'pkill -9 -f "ruby.*gz" 2>/dev/null; '
+            'sleep 2'
+        ],
+        shell=False,
+        output='screen',
+    )
+
+    # =========================================
     # VMware / Software Rendering Fixes
     # =========================================
     # Ogre 1.x uses GLX which works with LIBGL_ALWAYS_SOFTWARE.
@@ -243,6 +261,15 @@ def generate_launch_description():
         )
     )
 
+    # After cleanup finishes, start Gazebo + bridge + SDF generation
+    after_cleanup = RegisterEventHandler(
+        OnProcessExit(
+            target_action=cleanup,
+            on_exit=[generate_sdf, gazebo, gz_bridge,
+                     TimerAction(period=6.0, actions=[spawn_entity])],
+        )
+    )
+
     return LaunchDescription([
         # Environment
         *vm_env_vars,
@@ -252,19 +279,13 @@ def generate_launch_description():
         DeclareLaunchArgument('use_sim_time', default_value='true'),
         world_arg,
 
-        # 0. Generate SDF from URDF (run early so /tmp/warebot.sdf is ready)
-        generate_sdf,
+        # 0. Kill leftover processes from previous launches
+        cleanup,
 
-        # 1. Launch Gazebo
-        gazebo,
+        # 1. After cleanup: generate SDF, launch Gazebo, bridge, spawn
+        after_cleanup,
 
-        # 2. Bridge clock + sensor topics from Gazebo to ROS
-        gz_bridge,
-
-        # 3. Spawn robot in Gazebo (delayed for Gazebo to initialise)
-        TimerAction(period=6.0, actions=[spawn_entity]),
-
-        # 4-7. Event-driven chain (all gated behind spawn_entity completion)
+        # 2-5. Event-driven chain (all gated behind spawn_entity completion)
         after_spawn_rsp,     # spawn done + 5s -> RSP
         after_spawn_jsb,     # spawn done + 8s -> joint_state_broadcaster
         after_jsb_ddc,       # jsb done        -> diff_drive_controller

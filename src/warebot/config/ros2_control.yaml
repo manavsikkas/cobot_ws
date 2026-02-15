@@ -50,4 +50,4 @@ diff_drive_controller:
     angular.z.min_acceleration: -2.0
 
     preserve_turning_radius: true
-    use_stamped_vel: false
+    use_stamped_vel: true

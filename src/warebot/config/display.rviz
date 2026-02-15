@@ -1,102 +1,381 @@
 Panels:
   - Class: rviz_common/Displays
+    Help Height: 70
     Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Depth Image1
+      Splitter Ratio: 0.5
+    Tree Height: 110
   - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
     Name: Views
+    Splitter Ratio: 0.5
 Visualization Manager:
   Class: ""
   Displays:
-    - Class: rviz_default_plugins/Grid
-      Name: Grid
-      Enabled: true
-      Value: true
-      Line Style:
-        Line Width: 0.03
-        Value: Lines
-      Normal Cell Count: 0
+    - Alpha: 0.5
       Cell Size: 1
+      Class: rviz_default_plugins/Grid
       Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
       Plane: XY
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
-
-    - Class: rviz_default_plugins/TF
-      Name: TF
-      Enabled: true
       Value: true
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        default_mount:
+          Value: true
+        front_bumper_base_link:
+          Value: true
+        front_bumper_link:
+          Value: true
+        front_bumper_mount:
+          Value: true
+        front_camera_mount:
+          Value: true
+        front_left_wheel_link:
+          Value: true
+        front_right_wheel_link:
+          Value: true
+        inertial_link:
+          Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
+        realsense_bottom_screw_frame:
+          Value: true
+        realsense_link:
+          Value: true
+        rear_bumper_base_link:
+          Value: true
+        rear_bumper_link:
+          Value: true
+        rear_bumper_mount:
+          Value: true
+        rear_left_wheel_link:
+          Value: true
+        rear_right_wheel_link:
+          Value: true
+        top_chassis_link:
+          Value: true
+        top_plate_default_mount:
+          Value: true
+        top_plate_front_mount:
+          Value: true
+        top_plate_link:
+          Value: true
+        top_plate_rear_mount:
+          Value: true
+        top_plate_user_rail_link:
+          Value: true
+        velodyne_laser:
+          Value: true
+        velodyne_link:
+          Value: true
+      Marker Scale: 0.30000001192092896
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            base_link:
+              base_footprint:
+                {}
+              default_mount:
+                top_plate_user_rail_link:
+                  top_plate_link:
+                    top_plate_default_mount:
+                      {}
+                    top_plate_front_mount:
+                      velodyne_link:
+                        velodyne_laser:
+                          {}
+                    top_plate_rear_mount:
+                      {}
+              front_bumper_mount:
+                front_bumper_base_link:
+                  front_bumper_link:
+                    {}
+                front_camera_mount:
+                  realsense_bottom_screw_frame:
+                    realsense_link:
+                      {}
+              front_left_wheel_link:
+                {}
+              front_right_wheel_link:
+                {}
+              inertial_link:
+                {}
+              rear_bumper_mount:
+                rear_bumper_base_link:
+                  rear_bumper_link:
+                    {}
+              rear_left_wheel_link:
+                {}
+              rear_right_wheel_link:
+                {}
+              top_chassis_link:
+                {}
       Update Interval: 0
-      Marker Scale: 0.3
-
-    - Class: rviz_default_plugins/RobotModel
-      Name: RobotModel
-      Enabled: true
       Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
       Description Source: Topic
       Description Topic:
         Depth: 5
         Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
         Value: /robot_description
-      Alpha: 1
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        default_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_bumper_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_bumper_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_bumper_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_camera_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        inertial_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        realsense_bottom_screw_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        realsense_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_bumper_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_bumper_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_bumper_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_chassis_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_plate_default_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_plate_front_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_plate_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_plate_rear_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_plate_user_rail_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        velodyne_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        velodyne_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
       Visual Enabled: true
-      Collision Enabled: false
-
-    - Class: rviz_default_plugins/LaserScan
-      Name: Velodyne Scan
-      Enabled: true
-      Value: true
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        Value: /sensors/velodyne/scan
-      Size (m): 0.03
-      Color Transformer: FlatColor
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/LaserScan
       Color: 255; 0; 0
-      Style: Points
-      Alpha: 1
-
-    - Class: rviz_default_plugins/PointCloud2
-      Name: Velodyne Points
+      Color Transformer: FlatColor
+      Decay Time: 0
       Enabled: false
-      Value: false
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        Value: /sensors/velodyne/scan/points
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: Velodyne Scan
+      Position Transformer: XYZ
+      Selectable: true
       Size (Pixels): 3
+      Size (m): 0.029999999329447746
       Style: Points
-      Alpha: 1
-      Color Transformer: Intensity
-
-    - Class: rviz_default_plugins/Image
-      Name: Camera Image
-      Enabled: true
-      Value: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
-        Value: /sensors/realsense/image
-      Max Value: 1
-      Min Value: 0
-      Normalize Range: true
-
-    - Class: rviz_default_plugins/Image
-      Name: Depth Image
-      Enabled: false
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /sensors/velodyne/scan
+      Use Fixed Frame: true
+      Use rainbow: true
       Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 0
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: Velodyne Points
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Points
       Topic:
         Depth: 5
         Durability Policy: Volatile
-        Value: /sensors/realsense/depth_image
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /sensors/velodyne/scan/points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Enabled: true
       Max Value: 1
+      Median window: 5
       Min Value: 0
+      Name: Camera Image
       Normalize Range: true
-
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /sensors/realsense/image
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Max Value: 10
+      Median window: 5
+      Min Value: 0
+      Name: Depth Image
+      Normalize Range: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /sensors/realsense/depth_image
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -108,29 +387,46 @@ Visualization Manager:
       Hide Inactive Objects: true
     - Class: rviz_default_plugins/MoveCamera
     - Class: rviz_default_plugins/FocusCamera
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
   Value: true
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
       Distance: 5
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
       Focal Point:
         X: 0
         Y: 0
-        Z: 0.3
+        Z: 0.30000001192092896
       Focal Shape Fixed Size: true
-      Focal Shape Size: 0.05
+      Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.01
+      Near Clip Distance: 0.009999999776482582
       Pitch: 0.5
       Target Frame: base_link
       Value: Orbit (rviz)
-      Yaw: 3.14
+      Yaw: 3.140000104904175
     Saved: ~
 Window Geometry:
-  Height: 800
-  Width: 1200
+  Camera Image:
+    collapsed: false
+  Depth Image:
+    collapsed: false
   Displays:
     collapsed: false
+  Height: 800
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd000000010000000000000187000002c6fc0200000004fb000000160044006500700074006800200049006d006100670065010000003d0000008f0000001600fffffffb0000001800430061006d00650072006100200049006d00610067006501000000d2000000900000001600fffffffb000000100044006900730070006c0061007900730100000168000000f1000000c900fffffffb0000000a00560069006500770073010000025f000000a4000000a400ffffff00000323000002c600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: true
+  Width: 1200
+  X: 116
+  Y: 82
