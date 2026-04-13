@@ -1,36 +1,51 @@
 # cobot_ws
 
-ROS 2 workspace for the Warebot mobile manipulator and ClearPath-related packages.
+ROS2 workspace for the Warebot mobile robot — a differential-drive platform based on the ClearPath A200 chassis. Includes URDF/Xacro descriptions, Gazebo Ignition simulation, ros2_control configuration, and launch files for visualisation and control.
 
-## Contents
+## Platform
 
-- **warebot** — Warebot mobile manipulator (A200): URDF/xacro description, Gazebo simulation, ros2_control config, and launch files
-- **clearpath_common** — ClearPath shared models and resources
-- **clearpath_config** — ClearPath configuration packages
+The Warebot is configured as a ClearPath A200 with:
+- **Drivetrain** — 4-wheel differential drive, wheel separation 0.555 m, radius 0.165 m
+- **Attachments** — front/rear bumpers, top plate (modular via Xacro)
+- **Controllers** — `diff_drive_controller` + `joint_state_broadcaster` via ros2_control at 50 Hz
+
+## Packages
+
+| Package | Description |
+|---|---|
+| `warebot` | Main robot package — URDF/Xacro, launch files, ros2_control config |
+| `clearpath_common` | Shared ClearPath model resources |
+| `clearpath_config` | Platform-level configuration (`robot.yaml`) |
 
 ## Requirements
 
-- ROS 2 (tested with colcon/ament)
-- Dependencies: `xacro`, `robot_state_publisher`, `joint_state_publisher`, `rviz2`, `ros2_control`, `ros2_controllers`, Gazebo (Ignition)
+- ROS2 (Jazzy or compatible, tested with colcon/ament)
+- `xacro`, `robot_state_publisher`, `joint_state_publisher`, `rviz2`
+- `ros2_control`, `ros2_controllers`, `diff_drive_controller`
+- Gazebo Ignition
 
 ## Build
 
 ```bash
 cd cobot_ws
+rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 source install/setup.bash
 ```
 
-## Run
-
-Source the workspace, then use the package launch files, for example:
+## Launch
 
 ```bash
-source install/setup.bash
-ros2 launch warebot display.launch.py   # RViz + robot state publisher
-# or
-ros2 launch warebot rsp.launch.py       # Robot state publisher only
+# Full visualisation — Gazebo Ignition + RViz2 + robot state publisher
+ros2 launch warebot display.launch.py
+
+# Robot state publisher only (for use with external simulation)
+ros2 launch warebot rsp.launch.py
 ```
+
+## Configuration
+
+Robot platform parameters are in `src/warebot/config/robot.yaml`. Controller gains and joint names are in `config/ros2_control.yaml`.
 
 ## License
 
